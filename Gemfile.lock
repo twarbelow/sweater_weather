@@ -69,6 +69,8 @@ GEM
       multipart-post (>= 1.2, < 3)
     faraday_middleware (1.0.0)
       faraday (~> 1.0)
+    fast_jsonapi (1.5)
+      activesupport (>= 4.2)
     ffi (1.13.1)
     gh (0.18.0)
       activesupport (~> 5.0)
@@ -219,6 +221,7 @@ DEPENDENCIES
   byebug
   factory_bot_rails
   faker
+  fast_jsonapi
   launchy
   listen (>= 3.0.5, < 3.2)
   pg (>= 0.18, < 2.0)
