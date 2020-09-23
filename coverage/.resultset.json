@@ -13,21 +13,26 @@
           null,
           1,
           null,
-          1,
+          0,
           null,
-          1,
-          null,
-          0,
-          0,
-          0,
           0,
           null,
           0,
           0,
           0,
           0,
+          null,
           0,
           0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
           null,
           null,
           null
@@ -277,6 +282,8 @@
         "lines": [
           1,
           1,
+          1,
+          1,
           null,
           null,
           null
@@ -287,8 +294,55 @@
           1,
           null
         ]
+      },
+      "/Users/taija/turing/3mod/projects/sweater_weather/app/facades/geo_facade.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/taija/turing/3mod/projects/sweater_weather/app/services/geo_service.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/taija/turing/3mod/projects/sweater_weather/app/poros/geo_poro.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1600889442
+    "timestamp": 1600891264
   }
 }
