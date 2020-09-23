@@ -26,3 +26,8 @@ RSpec.describe "trails endpoint" do
     end
   end
 end
+
+#will need temp and summary from weather
+#will need name summary difficulty and location from trails
+#will use each trail location and original location to get distance_to_trail
+  # https://www.mapquestapi.com/directions/v2/route?key=KEY&from=Denver%2C+CO&to=Boulder%2C+CO&outFormat=json&ambiguities=ignore&routeType=fastest&doReverseGeocode=false&enhancedNarrative=false&avoidTimedConditions=false
