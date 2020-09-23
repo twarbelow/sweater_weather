@@ -1,9 +1,9 @@
 class TrailsFacade
-  def self.get_trails(lat, long)
+  def self.get_trails(lat, long, location_name)
     response = TrailsService.nearby_trails(lat, long)
     trails = response[:trails].map do |trail|
+      trail[:distance_to_trail] = GeoService.distance(trail[:location], location_name)
       TrailPoro.new(trail)
     end
-    # need to take location from each trail along with original location and do mapquest directions
   end
 end
