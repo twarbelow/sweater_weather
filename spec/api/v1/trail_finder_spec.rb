@@ -6,7 +6,7 @@ RSpec.describe "trails endpoint" do
     headers = { "ACCEPT" => "application/json",
                 "CONTENT_TYPE" => "application/json" }
 
-    GET "/api/v1/trails?location=#{location}", headers: headers
+    get "/api/v1/trails?location=#{location}", headers: headers
 
     expect(response).to be_successful
 
@@ -23,5 +23,6 @@ RSpec.describe "trails endpoint" do
       expect(trails).to include(:difficulty)
       expect(trails).to include(:location)
       expect(trails).to include(:distance_to_trail)
+    end
   end
 end
