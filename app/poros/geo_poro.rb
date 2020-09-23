@@ -5,5 +5,4 @@ class GeoPoro
     @lat = coord_hash[:lat]
     @long = coord_hash[:lng]
   end
-
 end
