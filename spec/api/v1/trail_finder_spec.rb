@@ -8,43 +8,20 @@ RSpec.describe "trails endpoint" do
 
     GET "/api/v1/trails?location=#{location}", headers: headers
 
-    info = JSON.parse(response.body, symbolize_names: true)
+    expect(response).to be_successful
 
-    expect(info.keys).to include()
+    json = JSON.parse(response.body, symbolize_names: true)
 
+    expect(json[:data][:type]).to eq("trail")
+    expect(json[:data][:attributes][:location]).to eq(location)
+    expect(json[:data][:attributes][:forecast][:summary].class).to eq(String)
+    expect(json[:data][:attributes][:forecast][:temperature].class).to eq(String)
 
-
+    jason[:trails].each do |trail|
+      expect(trails).to include(:name)
+      expect(trails).to include(:summary)
+      expect(trails).to include(:difficulty)
+      expect(trails).to include(:location)
+      expect(trails).to include(:distance_to_trail)
   end
 end
-
-Your response should be in the format below:
-{
-  "data": {
-    "id": "null",
-    "type": "trail",
-    "attributes": {
-      "location": "denver,co",
-      "forecast": {
-        "summary": "Cloudy with a chance of meatballs",
-        "temperature": "83"
-      },
-      "trails": [
-        {
-          "name": "Boulder Skyline Traverse",
-          "summary": "The classic long mountain route in Boulder."
-          "difficulty": "black"
-          "location": "Superior, Colorado"
-          "distance_to_trail": "23.008"
-        },
-        {
-          "name": "Bear Peak Out and Back",
-          "summary": "A must-do hike for Boulder locals and visitors alike!"
-          "difficulty": "black"
-          "location": "Boulder, Colorado"
-          "distance_to_trail": "30.098"
-        },
-        {...}
-      ]
-    }
-  }
-}
