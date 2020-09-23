@@ -1,5 +1,6 @@
 class TrailPoro
-  attr_reader :name, :summary, :difficulty, :location, :distance_to_trail
+  attr_reader :name, :summary, :difficulty, :location
+  attr_accessor :distance_to_trail
 
   def initialize(info)
     @name = info[:name]
