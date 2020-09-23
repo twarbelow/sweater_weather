@@ -21,11 +21,9 @@ class WeatherPoro
 
   def keep_keys(source, keys)
     result = Hash[keys.map {|k| [k, nil]}]
-
     source.each do |k, v|
       result[k] = source[k] if keys.include?(k)
     end
-
     result
   end
 end
