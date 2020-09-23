@@ -6,7 +6,7 @@ class GeoService
 
   private
 
-  def conn
+  def self.conn
     Faraday.new(
       url: 'http://www.mapquestapi.com',
       params: {

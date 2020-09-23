@@ -8,6 +8,7 @@ gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 gem 'fast_jsonapi'
 gem 'figaro'
+gem 'faraday'
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use Capistrano for deployment
