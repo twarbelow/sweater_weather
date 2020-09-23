@@ -341,8 +341,45 @@
           null,
           null
         ]
+      },
+      "/Users/taija/turing/3mod/projects/sweater_weather/app/facades/trails_facade.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/taija/turing/3mod/projects/sweater_weather/app/services/trails_service.rb": {
+        "lines": [
+          1,
+          1,
+          0,
+          0,
+          null,
+          null,
+          1,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1600891264
+    "timestamp": 1600891852
   }
 }

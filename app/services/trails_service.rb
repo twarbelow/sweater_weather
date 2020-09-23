@@ -1,5 +1,5 @@
 class TrailsService
-  def self.get_trails(lat, long)
+  def self.nearby_trails(lat, long)
     response = conn.get("data/get-trails?lat=#{lat}&lon=#{long}&maxDistance=10")
     JSON.parse(response.body, symbolize_names: true)
   end
