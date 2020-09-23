@@ -3,7 +3,7 @@
 
 # Whether, Sweater? Project Requirements - Back-End Engineering Curriculum
 
-1. This project is an API based application. **Use** the `rails new --api and other flags` when creating your application. _Doing `rails new` which includes views, etc is not a correct project structure._
+DONE 1. This project is an API based application. **Use** the `rails new --api and other flags` when creating your application. _Doing `rails new` which includes views, etc is not a correct project structure._
 
 2. We would like to see a README file included in your project that outlines the learning goals, how someone can clone and set up your application and where they can get their own API keys, and happy path endpoint use.
 
@@ -222,5 +222,3 @@ Use the wireframes to see what data is required on the front-end to decide what 
 [6]: https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#4xx_Client_errors
 [7]: https://backend.turing.io/module3/projects/sweater_weather/images/login.png
 [8]: https://backend.turing.io/module3/projects/sweater_weather/images/road_trip.png
-
-  
