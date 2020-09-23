@@ -14,8 +14,8 @@ RSpec.describe "trails endpoint" do
 
     expect(json[:data][:type]).to eq("trail")
     expect(json[:data][:attributes][:location]).to eq(location)
-    # expect(json[:data][:attributes][:forecast][:summary].class).to eq(String)
-    # expect(json[:data][:attributes][:forecast][:temperature].class).to eq(String)
+    expect(json[:data][:attributes][:forecast][:summary].class).to eq(String)
+    expect(json[:data][:attributes][:forecast][:temperature].class).to eq(String)
 
     json[:data][:attributes][:trails].each do |trail|
       expect(trail).to include(:name)
