@@ -1,5 +1,5 @@
 class WeatherPoro
-  attr_reader :current, :hourly, :daily
+  attr_reader :current, :hourly, :daily, :id
 
   def initialize(info)
     @current = info[:current]
@@ -17,6 +17,7 @@ class WeatherPoro
       temporary[:temp] = keep_keys(temporary[:temp], [:min, :max])
       temporary
     }
+    @id = "null"
   end
 
   def keep_keys(source, keys)
