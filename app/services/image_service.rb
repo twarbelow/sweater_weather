@@ -1,6 +1,7 @@
 class ImageService
   def self.search_images(location)
-    response = conn.get("api/?q=#{location}&image_type=photo&safesearch=true")
+    search = location.split(',')[0]
+    response = conn.get("api/?q=#{search}&image_type=photo")
     JSON.parse(response.body, symbolize_names: true)
   end
 
