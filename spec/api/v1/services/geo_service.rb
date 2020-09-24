@@ -16,7 +16,6 @@ RSpec.describe 'GeoService' do
       expect(returned[:results][0][:locations][0][:latLng][:lat]).to be_a(Float)
       expect(returned[:results][0][:locations][0][:latLng]).to include(:lng)
       expect(returned[:results][0][:locations][0][:latLng][:lng]).to be_a(Float)
-
     end
   end
 end
