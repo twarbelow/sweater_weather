@@ -8,6 +8,7 @@ RSpec.describe 'WeatherService' do
       returned = WeatherService.one_call(lat, long)
       expect(returned).to be_a(Hash)
       expect(returned).to include(:current)
+      expect(returned[:current]).to be_a(Hash)
       expect(returned).to include(:hourly)
       expect(returned[:hourly]).to be_a(Array)
       expect(returned).to include(:daily)
