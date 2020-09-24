@@ -1,9 +1,8 @@
 class ImagePoro
-  attr_reader :id, :type, :location, :image_url, :source, :author, :logo
+  attr_reader :id, :location, :image_url, :source, :author, :logo
 
   def initialize(info, location)
     @id = "null"
-    @type = "image"
     @location = location
     @image_url = info[:hits][0][:largeImageURL]
     @source = "pixabay.com"
